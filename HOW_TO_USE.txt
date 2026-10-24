@@ -1,0 +1,58 @@
+HOW TO USE: song-era-harmony-analyzer
+==================================================
+
+PURPOSE
+  Profiles harmonic trends, chord vocabularies, signature 4-chord loops, and
+  songwriting habits across musical decades (1960s through 2000s) using 16,800+
+  dated songs from the Lakh MIDI dataset on Drive B.
+
+CAPABILITIES
+  - Generates decade-specific chord quality distributions (Triads vs 7ths vs Suspended vs Extended)
+  - Identifies top recurring 4-chord loops that defined each specific era
+  - Cites real famous songs from the era in the database (Prince, Sting, Soundgarden, ZZ Top)
+  - Delivers period-accurate songwriting recipes for writing authentic retro music
+  - Compares harmonic complexity evolution across decades (e.g. 60s folk/blues vs 80s pop vs 90s alt)
+  - Seamlessly bridges to ableton-midi-chord-builder for 1-click MIDI progression clip export
+
+USE CASES
+  - Understand what chord habits made 80s synth-pop sound distinct from 90s alternative
+  - Discover the most popular chord loops of the 1970s funk/rock era
+  - Write a new track with authentic vintage harmonic structures and period voicings
+  - Analyze how dominant 7th chord usage transitioned into minor 7th and power triad loops
+  - Find real-world song references from a specific release year
+
+IDEAS
+  - Chain with ableton-midi-chord-builder to generate authentic 80s synth pads or 70s Rhodes MIDI clips
+  - Pair with reharmonization-engine to take a 60s triad loop and modernize it into 90s neo-soul
+  - Analyze the decade transition between 1980s synth-pop and 1990s grunge harmonic patterns
+  - Generate genre-accurate backing track chord templates for period film scoring and game design
+  - Create decade-themed songwriting challenges with authentic harmonic constraints
+
+PROMPTS YOU CAN PASTE
+  What chords made 80s synth-pop sound the way it did?
+
+  What were the most popular chord progressions of the 1970s?
+
+  Give me authentic, period-accurate chord loops for a 90s R&B or grunge track.
+
+  How did chord complexity change between the 60s and 2000s?
+
+  Show me chord habits and famous tracks from the 1960s in the database.
+
+EXAMPLE FLOW
+  You:   What chords made 80s synth-pop sound so distinct?
+  Model: [Analyzes 2,435 songs and 206,000 chords from the 1980s]
+         - Major triads: 48.5%, Minor triads: 17.0%, Minor 7ths: 11.7%
+         - Signature trait: Heavy use of suspended (sus4) and added 9th chords
+         - Top 4-chord loop: C -> F -> G -> C (and G -> C -> D -> G)
+         - Iconic examples: Daniel Balavoine (1985), Sting (1987), ZZ Top (1983)
+         - Recipe: Avoid jazz 7ths on dominant; use open sus4 and bVI-bVII-i cadences.
+         [Offers 1-click Ableton MIDI clip generation via ableton-midi-chord-builder]
+
+DEFAULT GOALS IF YOU DON'T NAME ONE
+  1. Determine the target decade or era from your prompt (defaulting to the 1980s if unspecified).
+  2. Query `era_harmony.py` across the 16,800+ dated song dataset on Drive B.
+  3. Break down the chord quality percentages (triads vs 7ths vs suspended vs extended).
+  4. Present the top 3–4 recurring 4-chord loops of that decade.
+  5. Cite 3 iconic tracks with release years and chord progressions.
+  6. Provide an authentic, period-accurate songwriting recipe with optional Ableton MIDI export.
